@@ -12,7 +12,7 @@ fn main() {
     let args: Vec<String> = env::args().collect();
     let command: &String = &args[1];
     let title: &String = &args[2];
-    let state: Map<String, Value> = read_file("./state.json");
+    let state: Map<String, Value> = read_file("./src/state.json");
     let status: String;
     match &state.get(*&title) {
         Some(result) => {
