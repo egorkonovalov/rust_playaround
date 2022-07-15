@@ -11,7 +11,7 @@ pub struct Done {
 impl Done {
     pub fn new(input_title: &str) -> Done {
         let base: Base = Base::new(input_title, "done");
-        return Done { super_struct: base };
+        Done { super_struct: base }
     }
 }
 impl Get for Done {}
