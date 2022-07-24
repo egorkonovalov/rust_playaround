@@ -1,0 +1,7 @@
+CREATE TABLE records (
+  id SERIAL PRIMARY KEY,
+  title VARCHAR NOT NULL,
+  amount DECIMAL NOT NULL,
+  currency VARCHAR NOT NULL,
+  date_of_record TIMESTAMP NOT NULL
+)
